@@ -15,9 +15,20 @@ const MenuItem = ({ title, links }) => {
       {links.map((item) => {
         return (
           <NavLink key={item.id} to={item.to}>
-            <Box display="flex" alignItems="center" sx={{ ml: 1, mt: 1,p:1}}>
+            <Box
+              display="flex"
+              alignItems="center"
+              sx={{
+                ml: 1,
+                mt: 1,
+                p: 1,
+                "&:hover": {
+                  color: colors.greenAccent[400],
+                },
+              }}
+            >
               {item.icon}
-              <Typography sx={{ml:2}} >{item.lable}</Typography>
+              <Typography sx={{ ml: 2 }}>{item.lable}</Typography>
             </Box>
           </NavLink>
         );
