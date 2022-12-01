@@ -3,7 +3,7 @@ import {Box} from "@mui/material";
 
 const Dashboard = () =>{
     return <Box>
-                <h1>Dashbora</h1>
+                <h1>Dashboard</h1>
     </Box>
 }
 

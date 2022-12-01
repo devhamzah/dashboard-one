@@ -28,7 +28,7 @@ const MenuItem = ({ title, links }) => {
               }}
             >
               {item.icon}
-              <Typography sx={{ ml: 2 }}>{item.lable}</Typography>
+              <Typography fontWeight="bold" sx={{ ml: 2 }}>{item.lable}</Typography>
             </Box>
           </NavLink>
         );

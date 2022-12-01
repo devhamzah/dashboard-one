@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 .sidebar{
-  width: 250px;
+  width: 260px;
   height: 100vh;
   overflow: hidden;
 }
@@ -21,6 +21,9 @@ body {
 }
 .content{
   flex-grow: 1;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 .userimage{
   border-radius: 50%;
@@ -32,6 +35,7 @@ a{
 
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -49,9 +53,11 @@ a{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 .active{
-  color: #3be8ba;
+  color: #2bac89;
 }
 @media only screen and (max-width:992px) {
   .sidebar{

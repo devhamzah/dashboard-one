@@ -27,7 +27,7 @@ export const menuData = [
   },
   {
     id: 2,
-    title: "Data",
+    title: "data",
     links: [
       {
         id: 2,
