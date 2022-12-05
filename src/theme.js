@@ -212,3 +212,8 @@ export const useMode = () => {
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   return [theme, colorMode];
 };
+
+export const useToggle = () =>{
+  const [menuToggle,setMenuToggle] = useState(false);
+  return [menuToggle,setMenuToggle];
+}

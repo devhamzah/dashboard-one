@@ -11,9 +11,13 @@ body {
   min-height: 100vh;
 }
 .sidebar{
-  width: 260px;
+  width: 270px;
   height: 100vh;
   overflow: hidden;
+  transition: 0.3s;
+}
+.shrink{
+  width: 90px;
 }
 
 .sidebar:hover{
@@ -59,6 +63,11 @@ a{
 .active{
   color: #2bac89;
 }
+.toggleBtn{
+  display: none;
+}
+
+
 @media only screen and (max-width:992px) {
   .sidebar{
     transition: all 0.5s;
@@ -66,5 +75,13 @@ a{
     width: 260px;
     height: 100vh;
     transform: translate(-310px);
+  }
+  .sidebarAvtive{
+    
+    transform: translate(310px);
+  }
+
+  .toggleBtn{
+    display: block;
   }
 }
